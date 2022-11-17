@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-	Aplicação em Node
+	NodeJs application
 </h3>
 
 <p align="center">
@@ -11,7 +11,7 @@
 </p>
 
 <h4 align="center">
-	Status: 🚀 Finalizado
+	Status: 🚀 Finished
 </h4>
 <p align="center">
 	<a href="#about">About</a> •
@@ -21,20 +21,19 @@
 
 ## About
 
-<h5 align="left"> Autenticação de usuario </h5> 
+<h5 align="left">User authentication </h5>
 
-A estrategia adotada nesse projeto foi o Passeport é a biblioteca de autenticação node.js, a integração foi feita com NestJs `@nestjs/passport` módulo.
+The strategy adopted in this project was Passeport is the node.js authentication library, the integration was done with NestJs `@nestjs/passport` module.
 
-Nesse projeto, os clientes começarão autenticando com um nome de usuário e senha. Depois de autenticado, o servidor emitirá um JWT que pode ser enviado como um [token de portador em um cabeçalho de autorização](https://tools.ietf.org/html/rfc6750) em solicitações subsequentes para comprovar a autenticação. Também criaremos uma rota protegida acessível apenas para solicitações que contenham um JWT válido. 
+In this project, clients will start by authenticating with a username and password. Once authenticated, the server will issue a JWT that can be sent as a [bearer token in an authorization header](https://tools.ietf.org/html/rfc6750) in subsequent requests to prove authentication. We'll also create a protected route accessible only to requests that contain a valid JWT.
 
-Em resumo:
+In short:
 
-- Autenticar o usuário (Usuario/Senha). 
+- Authenticate the user (User/Password).
 
-- Estenderemos isso emitindo um JWT.
+- We will extend this by issuing a JWT.
 
--  Rota protegida que verifica um JWT válido na solicitação que tem como prazo de expiração de 1d.
-
+- Protected route that checks for a valid JWT in the request that has an expiration time of 1d.
   
 
 ## Description
@@ -45,17 +44,15 @@ Em resumo:
 
 ```bash
 $ yarn add --save-dev @types/passport-local 
-(O Passport fornece uma estratégia chamada passaporte-local que implementa um mecanismo de autenticação de nome de usuário/senha, que atende às nossas necessidades para esta parte do nosso caso de uso.)
 $ nest g module auth
 $ nest g service auth
 $ yarn add --save @nestjs/jwt passport-jwt
-O @nestjs/jwtpacote é um pacote utilitário que ajuda na manipulação do JWT.
 $ yarn add --save-dev @types/passport-jwt
 
 ```
 
 ## Tech Stack
-<img src="https://img.shields.io/badge/Git-05122A?style=flat&logo=git" alt="git Badge" height="25">&nbsp;<img src="https://img.shields.io/badge/Html5-05122A?style=flat&logo=html5" alt="html5 Badge" height="25">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Nodejs-05122A?style=flat&logo=node.js" alt="nodejs Badge" height="25">&nbsp;<img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" height="25"><img src="https://img.shields.io/badge/Typescript-05122A?style=flat&logo=typescript" alt="typescript Badge" height="25">&nbsp;<img src="https://img.shields.io/badge/Javascript-05122A?style=flat&logo=javascript" alt="javascript Badge" height="25">&nbsp;
+<img src="https://img.shields.io/badge/Git-05122A?style=flat&logo=git" alt="git Badge" height="25">&nbsp;<img src="https://img.shields.io/badge/Html5-05122A?style=flat&logo=html5" alt="html5 Badge" height="25">&nbsp;&nbsp;<img src="https://img.shields.io/badge/Nodejs-05122A?style=flat&logo=node.js" alt="nodejs Badge" height="25">&nbsp;<img src="https://img.shields.io/badge/Typescript-05122A?style=flat&logo=typescript" alt="typescript Badge" height="25">&nbsp;<img src="https://img.shields.io/badge/Javascript-05122A?style=flat&logo=javascript" alt="javascript Badge" height="25">&nbsp;
 
 
 
